@@ -54,7 +54,7 @@ void Score()//评委打分
         
         for(j=1;j<=5;j++)//评分
         {
-            cout<<"评委 "<<j<<" 给分:";
+            cout<<"评委 "<<j<<" 打分:";
             cin>>f[j];
             sf=sf+f[j];
             if(max<f[j])
@@ -81,7 +81,7 @@ void Score()//评委打分
             break;
         }
     }
-    cout<<"完成"<<endl;
+    cout<<"评分完成"<<endl;
 }
 
 void racer()//选手信息
@@ -93,7 +93,7 @@ void racer()//选手信息
     {
         i++;
         cout<<"第 "<< i <<" 位选手:"<<endl;
-        cout <<"姓名,性别,班级,节目名称,节目类型,电话："<< endl << line << endl;
+        cout <<"姓名,性别,班级,电话,节目类型,节目名称"<< endl << line << endl;
     }
 }
 void rater()//评委信息
@@ -122,7 +122,6 @@ int main(int argc, const char * argv[]) {
             case 2:
                 rater();
                 break;
-                
             case 3:
                 Score();
                 break;
